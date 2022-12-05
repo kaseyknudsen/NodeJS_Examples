@@ -1,7 +1,10 @@
-const rect = {
-  perimeter: (x, y) => 2 * (x + y),
-  area: (x, y) => x * y,
-};
+// const rect = {
+//   perimeter: (x, y) => 2 * (x + y),
+//   area: (x, y) => x * y,
+// };
+//require is a function from node. It reads a JS file, executes the file, and then 
+//proceeds to return the exports object
+const rect = require('./rectangle')
 
 function solveRect(l, w) {
   console.log(`Solving for rectangle with dimensions: ${l}, ${w}`);
